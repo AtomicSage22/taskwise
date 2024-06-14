@@ -10,8 +10,10 @@ import { useGlobalContext } from '../context/GlobalProvider';
 
 export default function App() {
   const {isLoading, isLoggedIn} = useGlobalContext()
+  console.log('isloading', isLoading, 'isloggedin', isLoggedIn)
 
   if(isLoggedIn){ 
+    console.log('I am logged in')
     return <Redirect href='/groups' />
   }
 

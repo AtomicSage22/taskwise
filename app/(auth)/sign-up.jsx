@@ -24,7 +24,7 @@ const SignUp = () => {
     try {
       const result = await createUser(form.email, form.password, form.userName)
 
-      router.replace('/home')
+      router.replace('/groups')
     } catch (error) {
       Alert.alert('Error', error.message)
     }
@@ -32,7 +32,7 @@ const SignUp = () => {
       setisSubmitting(false)
     }
 
-    createUser(form.email, form.password, form.userName)  
+    // createUser(form.email, form.password, form.userName)  
   }
 
   return (

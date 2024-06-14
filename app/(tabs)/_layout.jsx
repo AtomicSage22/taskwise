@@ -10,13 +10,13 @@ const TabsLayout = () => {
     <Tabs
       screenOptions={{
         tabBarShowLabel: false,
-        tabBarInactiveTintColor:'#9AC8CD',
-        tabBarActiveTintColor:'#E1F7F5',
+        tabBarInactiveTintColor:'#CDCDE0',
+        tabBarActiveTintColor:'#FFA001',
         tabBarStyle:{
-          backgroundColor: '#1E0342',
+          backgroundColor: '#161622',
           borderTopWidth: 1,
-          borderTopColor: '#1E0342',
-          height: 76,
+          borderTopColor: '#232533',
+          height: 84,
         }
       }}
       
@@ -27,9 +27,9 @@ const TabsLayout = () => {
         title: 'Groups',
         headerShown: false,
         tabBarIcon:({color, focused}) => (
-          <View className='items-center justify-center '>
-            <Iconify icon="material-symbols-light:groups" size={20} color={color} />
-            <Text className={`${focused? 'text-sm text-[#E1F7F5]': 'text-xs text-[#9AC8CD]'}`}>Home</Text>
+          <View className='items-center justify-center'>
+            <Iconify icon="material-symbols-light:groups" size={24} color={color} />
+            <Text className={`${focused? 'font-psemibold': 'font-pregular'} text-xs `} style={{color:color}}>Groups</Text>
           </View> 
         )
       }} 
@@ -40,9 +40,9 @@ const TabsLayout = () => {
         title: 'Friends',
         headerShown: false,
         tabBarIcon:({color, focused}) => (
-          <View className='items-center justify-center '>
+          <View className='items-center justify-center gap-1'>
             <Iconify icon="la:user-friends" size={20} color={color} />
-            <Text className={`${focused? 'text-sm text-[#E1F7F5]': 'text-xs text-[#9AC8CD]'}`}>Friends</Text>
+            <Text className={`${focused? 'font-psemibold': 'font-pregular'} text-xs `} style={{color:color}}>Friends</Text>
           </View>
         )
       }} 
@@ -53,9 +53,9 @@ const TabsLayout = () => {
         title: 'Activity',
         headerShown: false,
         tabBarIcon:({color, focused}) => (
-          <View className='items-center justify-center '>
+          <View className='items-center justify-center gap-1'>
             <Iconify icon="fe:activity" size={20} color={color} />
-            <Text className={`${focused? 'text-sm text-[#E1F7F5]': 'text-xs text-[#9AC8CD]'}`}>Activity</Text>
+            <Text className={`${focused? 'font-psemibold': 'font-pregular'} text-xs `} style={{color:color}}>Activity</Text>
           </View>
         )
       }} 
@@ -66,9 +66,9 @@ const TabsLayout = () => {
         title: 'Profile',
         headerShown: false,
         tabBarIcon:({color, focused}) => (
-          <View className='items-center justify-center '>
+          <View className='items-center justify-center gap-1'>
             <Iconify icon="codicon:account" size={20} color={color} />
-            <Text className={`${focused? 'text-sm text-[#E1F7F5]': 'text-xs text-[#9AC8CD]'}`}>Profile</Text>
+            <Text className={`${focused? 'font-psemibold': 'font-pregular'} text-xs `} style={{color:color}}>Profile</Text>
           </View>
         )
       }} 
